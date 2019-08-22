@@ -10,6 +10,9 @@ BioSymbols = "3c28c6f8-a34d-59c4-9654-267d177fcfa9"
 IntervalTrees = "524e6230-43b7-53ae-be76-1e9e4d08d11b"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
+[compat]
+BioSequences = "~2"
+
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
