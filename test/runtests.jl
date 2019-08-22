@@ -2,7 +2,6 @@ using Test
 using BioAlignments
 using BioSymbols
 import BioSequences: @dna_str, @aa_str
-import YAML
 
 # Generate a random valid alignment of a sequence of length n against a sequence
 # of length m. If `glob` is true, generate a global alignment, if false, a local
