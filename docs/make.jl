@@ -9,7 +9,7 @@ makedocs(
     format = Documenter.HTML(
         edit_branch = "develop"
     ),
-    modules = [BioAlignments, BioAlignments.SAM, BioAlignments.BAM],
+    modules = [BioAlignments],
     sitename = "BioAlignments.jl",
     pages = [
         "Home" => "index.md",
