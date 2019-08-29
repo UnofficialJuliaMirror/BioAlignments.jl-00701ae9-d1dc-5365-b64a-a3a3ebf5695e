@@ -6,7 +6,10 @@ Pkg.instantiate()
 using Documenter, BioAlignments
 
 makedocs(
-    format = :html,
+    format = Documenter.HTML(
+        edit_branch = "develop"
+    ),
+    modules = [BioAlignments, BioAlignments.SAM, BioAlignments.BAM],
     sitename = "BioAlignments.jl",
     pages = [
         "Home" => "index.md",
@@ -19,11 +22,10 @@ makedocs(
     ],
     authors = "Kenta Sato, Ben J. Ward, The BioJulia Organisation and other contributors."
 )
+
 deploydocs(
     repo = "github.com/BioJulia/BioAlignments.jl.git",
-    julia = "1.0",
-    osname = "linux",
-    target = "build",
+    devbranch = "develop",
     deps = nothing,
     make = nothing
 )
