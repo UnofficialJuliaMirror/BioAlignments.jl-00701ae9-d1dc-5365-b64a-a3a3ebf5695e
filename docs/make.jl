@@ -1,3 +1,8 @@
+using Pkg
+
+Pkg.develop(PackageSpec(path=pwd()))
+Pkg.instantiate()
+
 using Documenter, BioAlignments
 
 makedocs(
